@@ -15,12 +15,6 @@ pipeline {
         }
 
         stage('Terraform') {
-            agent {
-                docker {
-                    image 'hashicorp/terraform:light'
-                    args '--entrypoint='
-                }
-            }
             steps {
                 sh 'terraform init'
                 script {
