@@ -14,7 +14,7 @@ Our solution consists of the following components:
 4. GitHub repository for version control
 
 ## Flow Diagram
-[Insert flow diagram here]
+![Terraform Drift Detection Flow](flow-diagram.png)
 
 The flow diagram should illustrate the following process:
 1. Developer pushes changes to GitHub
