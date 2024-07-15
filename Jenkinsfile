@@ -1,10 +1,15 @@
+options {
+    timeout(time: 1, unit: 'HOURS')
+    checkoutToSubdirectory('repo')
+}
+
 pipeline {
     agent any
 
     environment {
         AWS_ACCESS_KEY_ID     = credentials('aws-access-key-id')
         AWS_SECRET_ACCESS_KEY = credentials('aws-secret-access-key')
-        AWS_DEFAULT_REGION    = 'us-west-2'  // or your preferred region
+        AWS_DEFAULT_REGION    = 'us-west-2' 
     }
 
     stages {
